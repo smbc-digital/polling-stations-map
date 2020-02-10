@@ -1,30 +1,29 @@
 import Leaflet from 'leaflet'
-import mabpoxGL from 'mapbox-gl-leaflet' // eslint-disable-line no-unused-vars
-const token = 'pk.eyJ1IjoiZWxlbmFzZWNhcmEiLCJhIjoiY2s1Y2lzZjEwMDI2ZjNmczAzcjk2dDcycCJ9.zDwGfFIaIaG6pKT8FGPnLw'
-
+import mapboxGL from 'mapbox-gl-leaflet' // eslint-disable-line no-unused-vars
+ 
+const token = 'pk.eyJ1IjoiZ2lzLXN0b2NrcG9ydCIsImEiOiJjazV4dHlrd3cwNGxtM2RwM25zbG9saWJpIn0.vsrfkBERdMWjPgzj0TFjuA'
+ 
 const greyscale = Leaflet.mapboxGL({
-    style: 'mapbox://styles/elenasecara/ck5cijptu06ku1cqsnhncjxzr',
-    accessToken: token,
-    id: 'mapbox.light',
-    maxZoom:20
-})
-
+                    style: 'mapbox://styles/gis-stockport/ck5gr2oav0utc1ipbdkcjnjop',
+                    accessToken: token,
+                    id: 'mapbox.light',
+                    maxZoom:20
+                })
+ 
 const os_open = Leaflet.mapboxGL({
-    style: 'mapbox://styles/elenasecara/ck5cij7yv4nf01dpsvyfvy5vt',
-    accessToken: token,
-    id: 'mapbox.open',
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery � <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 20
-})
-
+                    style: 'mapbox://styles/gis-stockport/ck5mfgm1s38fb1jn4shus1hbd',
+                    accessToken: token,
+                    id: 'mapbox.os_open',
+                    maxZoom:20
+                })
+ 
 const streetLayer = Leaflet.mapboxGL({
-    style: 'mapbox://styles/elenasecara/ck5cij7yv4nf01dpsvyfvy5vt',
-    accessToken: token,
-    id: 'mapbox.street',
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery � <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 20
-})
-
+                    style: 'mapbox://styles/gis-stockport/ck5gqn69l0lok1inthicf4cnz',
+                    accessToken: token,
+                    id: 'mapbox.streets',
+                    maxZoom:20
+                })
+ 
 export {
     greyscale,
     os_open,

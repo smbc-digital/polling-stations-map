@@ -2,25 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css"
-    />
-    <!-- <link rel="stylesheet" type="text/css" href="https://s3-eu-west-1.amazonaws.com/smbc-react-assets/int/styleguide/v2/styles.min.css" /> -->
-    <!-- <link rel="stylesheet" href="@StylesheetConfig.Value.FontAwesome"/> -->
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://s3-eu-west-1.amazonaws.com/smbc-react-assets/int/styleguide/v2/styles.min.css" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <title>React App</title>
+    <meta name="description" content="Web site created using create-react-app" />
+    <title>Polling Stations</title>
+    <style>
+      html, 
+      body, 
+      #root, 
+      #root > div {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+      }
+    </style>
   </head>
-  <body id="root">
-	<noscript>You need to enable JavaScript to run this app.</noscript>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
   </body>
 </html>
