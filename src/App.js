@@ -92,7 +92,7 @@ function App() {
     const layerContentInMap = polygonsFoundInMap
       .filter(_ => _.feature && _._popup && _._popup._content)
       .reduce((acc, curr, index, src) => {
-        return `${acc} ${curr._popup._content} ${index != src.length - 1 && '<hr/>'}`
+        return `${acc} ${curr._popup._content} ${index != src.length - 1 ? '<hr/>' : ''}`
       }, '')
 
     /** opens new popup with new content and binds to map, this is instead of using 
