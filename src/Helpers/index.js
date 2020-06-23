@@ -1,3 +1,4 @@
+import fetch from 'cross-fetch'
 let target_url
 
 const getTargetUrl = () => {
