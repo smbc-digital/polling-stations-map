@@ -8,7 +8,8 @@ const Configuration = {
     FullscreenControl: true,
     DisplayLayerControls: true,
     DisplayGrayScale: true,
-    DisplayOSOpen: true
+    DisplayOSOpen: true,
+    Class: 'govuk-grid-column-full smbc-map__container'
   },
   DynamicData: [
     {

@@ -1,11 +1,23 @@
 const pollingPopup = (feature, circleMarker) => {
-  circleMarker.bindPopup(
-    `<div class="item">
-      <i class="tag fa fa-info"></i><p class="title">Name</p>
-      <p class="info">${feature.properties.name}</p>
-      <i class="tag fa fa-map-marker"></i><p class="title">Location</p>
-      <p class="info">${feature.properties.address}</p>
+  circleMarker.bindPopup(`<div class="smbc-map__item">
+    <div class="smbc-map__item__header__block">
+      <i class="fa fa-info smbc-map__item__header__block__icon" aria-hidden="true"></i>
+      <span class="smbc-map__item__header__block__title">Name</span>
+    </div>
+    <div class="smbc-map__item__body">
+      <p>${feature.properties.name}</p>
+    </div>
+    </div>
+    <div class="smbc-map__item">
+    <div class="smbc-map__item__header__block">
+      <i class="fa fa-map-marker smbc-map__item__header__block__icon" aria-hidden="true"></i>
+      <span class="smbc-map__item__header__block__title">Location</span>
+    </div>
+    <div class="smbc-map__item__body">
+      <p>${feature.properties.address}</p>
+    </div>
     </div>`
+
   )
 }
 

@@ -16,13 +16,7 @@ let config = {
             },
             {
                 test: /\.css$/,
-                use: ['style-loader', 'css-loader'],
-                include: [
-                    path.resolve(__dirname, 'node_modules/leaflet-fullscreen/dist'),
-                    path.resolve(__dirname, 'node_modules/leaflet/dist'),
-                    path.resolve(__dirname, 'node_modules/mapbox-gl/dist'),
-                    path.resolve(__dirname, 'node_modules/font-awesome/css')
-                ]
+                use: ['style-loader', 'css-loader']
             },
             {
                 test: /\.(png|jpg|gif|svg)$/i,
